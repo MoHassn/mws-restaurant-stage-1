@@ -38,6 +38,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  padding-top: 150px;
 }
 #footer {
   background-color: #444;
@@ -47,6 +48,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  width: 100%
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -57,6 +59,7 @@ nav {
 }
 nav h1 {
   margin: auto;
+  padding: 20px
 }
 nav h1 a {
   color: #fff;
@@ -71,7 +74,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -106,9 +109,10 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background-color: #3397DB;
   align-items: center;
+  padding: 10px;
 }
 .filter-options h2 {
   color: white;
@@ -131,6 +135,9 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -154,6 +161,7 @@ nav h1 a {
   max-width: 100%;
   min-height: 248px;
   min-width: 100%;
+  object-fit: cover;
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -189,7 +197,7 @@ nav h1 a {
   width: 100%;
   z-index: 1000;
 }
-.inside #map-container {
+/* .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
   position: fixed;
@@ -201,11 +209,15 @@ nav h1 a {
   background-color: #ccc;
   height: 100%;
   width: 100%;
+} */
+.inside #maincontent {
+  display: block;
+  width: 100%;
 }
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -239,8 +251,8 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 40px 40px 30px;
+  width: 100%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
